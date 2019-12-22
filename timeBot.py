@@ -4,8 +4,8 @@ import discord
 from discord.ext import commands
 import asyncio
 
-botPrefix = "time!"
-botToken = "NjU3NjgyMzQ2MzE2NjYwNzQ2.Xf0wbw.Lt3tC7_KspsV8lDWB3hh4DPtRTI"
+botPrefix = "" #Your Prefix Here
+botToken = "" #Your Bot Token Here
 
 bot=commands.Bot(command_prefix=botPrefix)
 t = "Asia/Dubai"
