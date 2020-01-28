@@ -12,6 +12,10 @@ t = "Asia/Dubai"
 timeZone = tz.gettz(t) if t is not None else tz.tzutc()
 
 
+@bot.event
+async def on_ready():
+    print("Logged in as "+bot.user.name)
+
 @bot.command()
 async def start(ctx):
     while True:
