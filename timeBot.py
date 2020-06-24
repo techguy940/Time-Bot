@@ -15,12 +15,10 @@ timeZone = tz.gettz(t) if t is not None else tz.tzutc()
 @bot.event
 async def on_ready():
     print("Logged in as "+bot.user.name)
-
-@bot.command()
-async def start(ctx):
     while True:
       await ctx.guild.me.edit(nick=datetime.now().astimezone(timeZone).strftime("%a %I:%M %p"))
       await asyncio.sleep(300) #changes time every 5 minutes
       await ctx.guild.me.edit(nick=datetime.now().astimezone(timeZone).strftime("%a %I:%M %p"))
+
 
 bot.run(botToken)
