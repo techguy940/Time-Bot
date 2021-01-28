@@ -8,9 +8,9 @@ botPrefix = "" #Your Prefix Here
 botToken = "" #Your Bot Token Here
 GUILD_ID = ""
 
-bot=commands.Bot(command_prefix=botPrefix)
+bot = commands.Bot(command_prefix=botPrefix)
 t = "Asia/Dubai"
-timeZone = tz.gettz(t) if t is not None else tz.tzutc()
+timeZone = tz.gettz(t) if t else tz.tzutc()
 
 
 @bot.event
